@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+  </head>
+  <body>
+
+      <input id="name" type="text"placeholder="Enter Your Name please">
+      <a href="/chat.html" onclick="login()">submit</a>
+  </body>
+  <script>
+    function login() {
+      localStorage.setItem("name", document.getElementById("name").value);
+      alert(localStorage.getItem("name"));
+    }
+  </script>
+</html>
